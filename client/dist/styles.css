@@ -1,0 +1,58 @@
+body {
+	font-family: Hevetica, sans-serif;
+	color: green;
+
+}
+
+button {
+	padding: 10px;
+	margin: 5px;
+}
+
+.column {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.row {
+	display:flex:
+}
+
+.top-banner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-bar {
+	min-width: 600px;
+	min-height: 150px;
+}
+
+.logo {
+	background-image: url('https://picsum.photos/300/150');
+	height: 150px;
+	width: 300px;
+}
+
+.carousel {
+	height: 300px;
+	width: 800px;
+	border: 1px solid black;
+}
+
+.promo-container {
+	display: flex;
+	justify-content: space-around;
+	width: 800px;
+	padding: 20px;
+}
+
+.promo-card {
+	background-image: url('https://picsum.photos/200/200');
+	height: 200px;
+	width: 200px;
+	line-height: 200px;
+	text-align: center;
+
+}
