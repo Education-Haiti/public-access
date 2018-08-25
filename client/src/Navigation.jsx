@@ -1,14 +1,24 @@
 import React from 'react';
 
 const Navigation = (props) => {
-	const buttonLabels = ['Home', 'Success Stories', 'Mentors', 'Resources', 'Apply', 'Login'];
-	let rows = buttonLabels.map ((label) => (
-		<button className="nav-button" onClick={() => props.handleNavClick(label)}>{label}</button>
+	const {links, handleNavClick} = props;
+
+	let rows = links.map (({label}) => (
+		<button 
+			className={"nav-button "} 
+			onClick={() => handleNavClick(label)}
+		>
+			{label}
+		</button>
 	));
 
 	return (
-		<div className="nav-bar">
-			{rows}
+		<div className="header row">
+			<div className="logo">EDUMACATION JP</div>
+			<div className="navigation">
+				{rows}
+				<button className="login button">LOG IN</button>
+			</div>
 		</div>
 	)
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Carousel = (props) => (
-	<div className="carousel">BUTIFUL CAROUSEL HERE</div>
+	<div className="carousel">[]</div>
 );
 
 export default Carousel;
