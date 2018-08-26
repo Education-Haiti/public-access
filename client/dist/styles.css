@@ -1,12 +1,53 @@
+html {
+	width: 100vw;
+	height: 100vh;
+}
 body {
 	font-family: Hevetica, sans-serif;
 	color: green;
-
+	width: 100%;
+	height: 100%;
 }
 
 button {
-	padding: 10px;
+	padding: 5px;
 	margin: 5px;
+	min-width: 70px;
+	height: 40px;
+	border: 0px;
+	border-radius: 5px;
+	background-color: white;
+	color: #67777f;
+	text-transform: uppercase;
+	font-size: 10pt;
+}
+
+button:hover {
+	color: #a33030;
+}
+
+.apply {
+	width: 200px;
+	height: 60px;
+	border-radius: 5px;
+	background-color: #a33030;
+	color: white;
+	font-weight: normal;
+	font-size: 1.2em;
+	opacity: 0.95;
+}
+
+.apply:hover{
+	color: #a33030;
+	background-color: #ffdfe7;
+}
+
+.login:hover {
+	border: 1px solid #a33030;
+	border-radius: 5px;
+	background-color: #a33030;
+	color: white;
+	opacity: 0.9;
 }
 
 .column {
@@ -16,43 +57,148 @@ button {
 }
 
 .row {
-	display:flex:
+	display:flex;
+	flex-direction: row;
 }
 
-.top-banner {
+.header {
+	width: 105%;
+	height: 70px;
+	margin: 0px;
 	display: flex;
-	justify-content: space-between;
+	align-items: center;
+	justify-content: space-around;
+  box-shadow: 3px 5px 10px 0px #67777f;
+	position: fixed;
+	background-color: white;
+	opacity: 0.8;
+	z-index: 10;
 }
 
-.nav-bar {
-	min-width: 600px;
-	min-height: 150px;
+.header:hover {
+	opacity: 0.97;
 }
 
 .logo {
-	background-image: url('https://picsum.photos/300/150');
-	height: 150px;
-	width: 300px;
+	height:70px;
+	width: 200px;
+	font-size: 0.4em;
 }
 
 .carousel {
+	margin: 70px 0px 20px 0px;
 	height: 300px;
-	width: 800px;
-	border: 1px solid black;
+	width: 100%;
+	background-image: url('https://picsum.photos/1300/300');
 }
 
 .promo-container {
+	padding: 5% 0% 5% 0%;
 	display: flex;
 	justify-content: space-around;
 	width: 800px;
-	padding: 20px;
 }
 
 .promo-card {
-	background-image: url('https://picsum.photos/200/200');
 	height: 200px;
 	width: 200px;
-	line-height: 200px;
 	text-align: center;
+	color: #67777f;
+	font-size: 0.85em;
+	line-height: 1.4;
+	padding: 0px 20px 0px 20px;
+}
 
+.label {
+	text-transform: uppercase;
+	color: #a33030;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 10px 0px 5px 0px;
+}
+
+.circle {
+	height: 80px;
+	width:80px;
+	border: 2px solid #a33030;
+	border-radius: 50px;
+}
+
+.wide-panel-container {
+	width: 100%;
+}
+
+.mentors {
+	background-color: #a33030;
+	color: white;
+}
+
+.about {
+	color: #67777f;
+}
+
+.wide-panel {
+	width: 50%;
+	padding: 5% 0% 5% 0%;
+	text-align: center;
+	line-height: 1.5;
+	font-size: 0.9em;
+}
+
+.wide-panel .heading {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.4em;
+	padding: 10px;
+	border-bottom: 2px solid ;
+}
+
+.wide-panel button {
+	width: 200px;
+	height: 50px;
+	border: 2px solid;
+}
+
+.footer {
+	border-top: 2px solid #67777f;
+	color: #67777f;
+	width: 100%;
+	font-size: 0.8em;
+	line-height: 1.8;
+	justify-content: center;
+}
+
+.links{
+	align-items: flex-start;
+	padding: 30px 80px 50px 80px;
+}
+
+.links a:link {
+	color: #67777f;
+	text-decoration: none;
+}
+
+.links a:hover {
+	color: #a33030;
+}
+
+.links a:active{
+	color: black;
+}
+
+.icon {
+	height: 25px;
+	width: 25px;
+	margin: 5px;
+}
+
+
+.facebook,
+.twitter {
+	background-color: #67777f;
+	border-radius: 5px;
+}
+
+.heading {
+	font-weight: bold;
 }
