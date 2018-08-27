@@ -12,7 +12,7 @@ const getSuccessfulMentees = (whenGotten) => {
 	});
 }
 
-const getMentorsVisitors = (whenGotten) => {
+const getMentorsVisits = (whenGotten) => {
 	const theQuery = `SELECT * FROM mentors_visits`;
 	connection.query(theQuery, (err, res) => {
 		if (err) {
@@ -27,11 +27,11 @@ const getMentorsVisitors = (whenGotten) => {
 	console.log('Here it is! ', res);
 })*/
 
-getMentorsVisitors((err, res) => {
+/*getMentorsVisits((err, res) => {
 	console.log('Here it is! ', res);
-})
+})*/
 
 module.exports = {
 	getSuccessfulMentees,
-	getMentorsVisitors
+	getMentorsVisits
 };
