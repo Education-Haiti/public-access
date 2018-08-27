@@ -17,7 +17,7 @@ CREATE TABLE mentors_visits (
 	id INT NOT NULL AUTO_INCREMENT,
 	first_name VARCHAR(30) NOT NULL,
 	last_name VARCHAR(30) NOT NULL,
-	highschool VARCHAR(30) NOT NULL,
+	highschool VARCHAR(250) NOT NULL,
 	undergrad VARCHAR(30) NOT NULL,
 	grad VARCHAR(30),
 	employer VARCHAR(30),
@@ -34,7 +34,10 @@ INSERT INTO successful_mentees (first_name, last_name, bio, photo, school_logo) 
 INSERT INTO successful_mentees (first_name, last_name, bio, photo, school_logo) VALUES ('Beverlye', 'Gedéon', 'Beverlye was born and raised in Haiti. She attended College Marie Anne from 2004 to 2017, the year she graduated and the same year she was admitted to the Class of 2021 of the University of Pennsylvania. Dreaming about creating her own green company, Beverlye is interested in a major in Economics and a minor in Environmental Studies. She has also developed a passion for both music and volleyball, hobbies that she will use to bring her spark on the campus during her college journey.', 'https://s3.amazonaws.com/educationhaiti/beverlye_gedeon.png', 'https://s3.amazonaws.com/educationhaiti/upenn.png');
 
 
-INSERT INTO mentors_visits (first_name, last_name, highschool, undergrad, grad, employer, title) VALUES ('Jules', 'Walter', 'St Louis de Gonzage', 'MIT', 'Harvard', 'Slack', 'Senior Product Manager', 'dafa');
+INSERT INTO mentors_visits (first_name, last_name, highschool, undergrad, grad, employer, title, photo) VALUES ('Jules', 'Walter', 'St Louis de Gonzage', 'MIT', 'Harvard', 'Slack', 'Senior Product Manager', 'https://s3.amazonaws.com/educationhaiti/jules_walter.png');
+INSERT INTO mentors_visits (first_name, last_name, highschool, undergrad, grad, title, photo) VALUES ('Alanda', 'Alexandre', 'Institution du Sacre Coeur', 'Montclair State University', 'Montclair State University', 'Event Services Coordinator', 'https://s3.amazonaws.com/educationhaiti/alanda_alexandre.png');
+INSERT INTO mentors_visits (first_name, last_name, highschool, undergrad, photo) VALUES ('Alexandre', 'Georges', 'Institution Saint-Louis de Gonzague', 'Stony Brook University', 'https://s3.amazonaws.com/educationhaiti/alexandre_georges.png');
+
 
 
 
