@@ -19,7 +19,7 @@ class SuccessStories extends React.Component {
 	getSuccessFullMentees() {
 		axios.get('/visitors/successful-mentees')
 			.then((response) => {
-				this.setState({successfulMentees: response.data});
+				this.setState({ successfulMentees: response.data });
 				
 			})
 			.catch((error) => {

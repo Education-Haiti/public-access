@@ -105,7 +105,7 @@ button:hover {
 
 .carousel {
 	margin: 70px 0px 20px 0px;
-	height: 500px;
+	height: 350px;
 	width: 100%;
 	background-image: url('https://s3.amazonaws.com/educationhaiti/successful_pic.png');
 }
@@ -416,11 +416,15 @@ button:hover {
 	font-size: 20px;
 	color: #000000;
 	margin-bottom: 3px;
+	text-align: center;
 
 }
 
 .mentor-description {
-
+	font-size: 17px;
+	color: #67777f;
+	margin-bottom: 35px;
+	text-align: center;
 }
 
 

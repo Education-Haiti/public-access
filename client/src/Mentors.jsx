@@ -47,44 +47,28 @@ class Mentors extends React.Component {
 						<div className="mentor-container">
 							<img className="mentor-photo" src="https://s3.amazonaws.com/educationhaiti/bedjinal_gondre.png"/>
 							<div className="mentor-name"> Bedjinal Gondre </div>
-							<div> I went to SLG YO! </div>
+							<div className="mentor-description"> 
+								Institution St Louis de Gonzague
+								Undergrad: Berea College
+							</div>
 						</div>
+						{
+							this.state.mentors.map((mentor, index) => {
+								return (
+									<div className="mentor-container">
+										<img className="mentor-photo" src={mentor.photo}/>
+										<div className="mentor-name"> {mentor.first_name + ' ' + mentor.last_name} </div>
+										<div className="mentor-description"> 
+											<div> {mentor.highschool} </div>
+											<div> {mentor.undergrad} </div>
+											<div> {mentor.grad} </div>
+											<div> {mentor.employer} </div>
+										</div>
 
-						<div className="mentor-container">
-							<img className="mentor-photo" src="https://s3.amazonaws.com/educationhaiti/bedjinal_gondre.png"/>
-							<div className="mentor-name"> Bedjinal Gondre </div>
-							<div> I went to SLG YO! </div>
-						</div>
-
-						<div className="mentor-container">
-							<img className="mentor-photo" src="https://s3.amazonaws.com/educationhaiti/bedjinal_gondre.png"/>
-							<div className="mentor-name"> Bedjinal Gondre </div>
-							<div> I went to SLG YO! </div>
-						</div>
-
-						<div className="mentor-container">
-							<img className="mentor-photo" src="https://s3.amazonaws.com/educationhaiti/bedjinal_gondre.png"/>
-							<div className="mentor-name"> Bedjinal Gondre </div>
-							<div> I went to SLG YO! </div>
-						</div>
-
-						<div className="mentor-container">
-							<img className="mentor-photo" src="https://s3.amazonaws.com/educationhaiti/bedjinal_gondre.png"/>
-							<div className="mentor-name"> Bedjinal Gondre </div>
-							<div> I went to SLG YO! </div>
-						</div>
-
-						<div className="mentor-container">
-							<img className="mentor-photo" src="https://s3.amazonaws.com/educationhaiti/bedjinal_gondre.png"/>
-							<div className="mentor-name"> Bedjinal Gondre </div>
-							<div> I went to SLG YO! </div>
-						</div>
-
-						<div className="mentor-container">
-							<img className="mentor-photo" src="https://s3.amazonaws.com/educationhaiti/bedjinal_gondre.png"/>
-							<div className="mentor-name"> Bedjinal Gondre </div>
-							<div> I went to SLG YO! </div>
-						</div>
+									</div>
+								)
+							})
+						}
 
 					</div>
 
