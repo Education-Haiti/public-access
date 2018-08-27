@@ -7,6 +7,7 @@ body {
 	color: green;
 	width: 100%;
 	height: 100%;
+	margin:0px;
 }
 
 button {
@@ -287,6 +288,7 @@ button:hover {
 }
 
 .succ-mentee-bio {
+	width: 650px;
 	font-size: 17px;
 	color: #67777f;
 }

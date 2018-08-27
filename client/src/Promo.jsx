@@ -30,8 +30,8 @@ const Promo = (props) => {
 		} 
 	];
 
-	let rows = cards.map(card => {
-		return <PromoCard card={card}/>
+	let rows = cards.map((card, index) => {
+		return <PromoCard key={index} card={card}/>
 	});
 
 	return (

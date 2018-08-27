@@ -3,8 +3,8 @@ import React from 'react';
 const Footer = (props) => {
 	const { links } = props;
 
-	let $links = links.map (({label, url}) => (
-		<a href={url}>{label}</a>
+	let $links = links.map (({label, url}, index) => (
+		<a key={index}href={url}>{label}</a>
 	));
 
 	return (

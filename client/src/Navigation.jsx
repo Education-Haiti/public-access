@@ -3,8 +3,9 @@ import React from 'react';
 const Navigation = (props) => {
 	const {links, handleNavClick, handleNavButtonClicks} = props;
 
-	let rows = links.map (({label}) => (
+	let rows = links.map (({label}, index) => (
 		<button 
+			key={index}
 			className={"nav-button "} 
 			onClick={() => handleNavClick(label)}
 		>

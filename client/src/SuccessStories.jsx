@@ -43,7 +43,7 @@ class SuccessStories extends React.Component {
 					{
 						this.state.successfulMentees.map((mentee, index) => {
 							return (
-								<div className="succ-mentee-container">
+								<div key={index} className="succ-mentee-container">
 									<img className="succ-mentee-photo" src={ mentee.photo }
 									onMouseOver={e => e.currentTarget.src=mentee.school_logo}
 									onMouseOut={e => e.currentTarget.src=mentee.photo}/>
@@ -71,8 +71,6 @@ class SuccessStories extends React.Component {
 		)
 	}
 }
-
-
 
 
 export default SuccessStories;

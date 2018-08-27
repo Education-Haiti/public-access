@@ -15,7 +15,6 @@ class Mentors extends React.Component {
 
 	componentDidMount() {
 		this.getMentors();
-
 	}
 
 	getMentors() {
@@ -30,8 +29,6 @@ class Mentors extends React.Component {
 	}
 
 	render() {
-
-		
 		return (
 			<div>
 				<div className="mentors-container">
@@ -44,14 +41,6 @@ class Mentors extends React.Component {
 					</div>
 
 					<div className="mentors-line-container">
-						<div className="mentor-container">
-							<img className="mentor-photo" src="https://s3.amazonaws.com/educationhaiti/bedjinal_gondre.png"/>
-							<div className="mentor-name"> Bedjinal Gondre </div>
-							<div className="mentor-description"> 
-								Institution St Louis de Gonzague
-								Undergrad: Berea College
-							</div>
-						</div>
 						{
 							this.state.mentors.map((mentor, index) => {
 								return (
@@ -89,6 +78,4 @@ class Mentors extends React.Component {
 }
 
 	
-
-
 export default Mentors;
