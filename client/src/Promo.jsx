@@ -3,7 +3,7 @@ import React from 'react';
 
 const PromoCard = (props) => (
 	<div className="promo-card column">
-		<div className="circle">*</div>
+		<img className="circle" src={props.card.url}/>
 		<div className="label">{props.card.label}</div>
 		<div>{props.card.description}</div>
 	</div>
@@ -15,17 +15,17 @@ const Promo = (props) => {
 	const cards = [
 		{
 			label:'Mission', 
-			url:'https://picsum.photos/200/200', 
+			url:'https://s3.amazonaws.com/educationhaiti/mission.png', 
 			description: 'To forge the next generation of young leaders in Haiti.'
 		},
 		{
 			label: 'Scope',
-			url: 'https://picsum.photos/200/200',
+			url: 'https://s3.amazonaws.com/educationhaiti/scope.png',
 			description: 'We currently accept mentees from haitian secondary schools located for the most part in the Port-au-Prince area.'
 		},
 		{
 			label: 'Programs',
-			url: 'https://picsum.photos/200/200',
+			url: 'https://s3.amazonaws.com/educationhaiti/programs.png',
 			description: 'Our various programs help students expand their horizons and prepare for the different college application processes.'
 		} 
 	];

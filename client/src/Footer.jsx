@@ -14,8 +14,15 @@ const Footer = (props) => {
 					Copyright © 2018 Education Haiti. All rights reserved.
 				</div>
 				<div className="row">
-					<a href="/" className="icon facebook"></a>
-					<a href="/" className="icon twitter"></a>
+					<a href="https://www.facebook.com/educationhaiti/" target="_blank" rel="noopener noreferrer">
+					  <img className="icon" src="https://s3.amazonaws.com/educationhaiti/facebook.png"/>
+					</a>
+
+					<a href="https://twitter.com/Education_Haiti" target="_blank" rel="noopener noreferrer">
+					  <img className="icon" src="https://s3.amazonaws.com/educationhaiti/twitter.png"/>
+					</a>
+						
+						
 				</div>
 			</div>
 			<div className="column links" >

@@ -60,7 +60,7 @@ class SuccessStories extends React.Component {
 						<div className="succ-bottom-section-text"> Education Haiti is an organization that helps Haitian students make the most of their potential
 						 </div>
 
-						 <div className="succ-bottom-section-button">
+						 <div className="succ-bottom-section-button" onClick={() => {this.props.onClick(1)}}>
 						   START WRITING YOUR STORY TODAY
 						 </div>
 					</div>

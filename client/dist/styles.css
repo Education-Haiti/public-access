@@ -107,7 +107,7 @@ button:hover {
 	margin: 70px 0px 20px 0px;
 	height: 500px;
 	width: 100%;
-	background-image: url('https://s3.amazonaws.com/educationhaiti/success.png');
+	background-image: url('https://s3.amazonaws.com/educationhaiti/successful_pic.png');
 }
 
 .promo-container {
@@ -221,10 +221,13 @@ button:hover {
 	height: 25px;
 	width: 25px;
 	margin: 5px;
+	
 }
 
 
-.facebook,
+.facebook {
+	background-image: url('https://s3.amazonaws.com/educationhaiti/twitter.png');
+}
 .twitter {
 	background-color: #67777f;
 	border-radius: 5px;
@@ -326,7 +329,99 @@ button:hover {
 }
 
 
+.mentors-container {
+	width: 100 vw;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
+.mentors-title {
+	color: #234060;
+	font-weight: bold;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.mentors-description {
+	width: 900px;
+	color: #000000;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.mentors-bottom-section-container {
+	display: flex;
+	width: 100vw;
+	height: 300px;
+	flex-direction: column;
+	align-items: center;
+	background-color: #234060;
+
+}
+
+.mentors-bottom-section-text {
+	font-size: 17px;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 70px;
+}
+
+.mentors-bottom-section-button {
+	border: 2px solid #ffffff;
+	padding: 10px;
+	margin: 5px;
+	margin-top:2px;
+	min-width: 70px;
+	border-radius: 5px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 18pt;
+
+}
+
+.mentors-bottom-section-button:hover {
+	border: 2px solid #d9edfc;
+	color: #234060;
+	background-color: #d9edfc;
+}
+
+.mentors-line-container {
+	display: flex;
+	width: 750px;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.mentor-container {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mentor-photo {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+
+.mentor-name {
+	margin-top: 15px;
+	font-weight: bold;
+	font-size: 20px;
+	color: #000000;
+	margin-bottom: 3px;
+
+}
+
+.mentor-description {
+
+}
 
 
 
