@@ -7,7 +7,6 @@ const links = [
 	{ label: 'Success Stories', url: 'www.google.com'},
 	{ label: 'Mentors', url: 'www.google.com'},
 	{ label: 'Resources', url: 'www.google.com'},
-	{ label: 'Apply', url: 'www.google.com'},
 ]
 
 const panels = {
@@ -15,19 +14,13 @@ const panels = {
 	{
 		label: 'About Us', 
 		tag: 'about',
-		description: 'We raise, slaughter, and sell the best chiknz' + 
-				' in an effort to save innocent cows and give them better lives. ' +
-				' We believe all cows are created equal. They deserve better. ' +
-				' But not chiknz. Chiknz are just fake dinosaurs. They gross.',
+		description: 'We strive to provide talented haitian students with mentorship in an effort to open doors to greater and better higher education opportunities.',
 		buttonContent: 'Success Stories'
 	},
 	mentors:
 	{ label: 'Mentors', 
 		tag: 'mentors',
-		description: 'We all have a moral obligation to reach out to cows in need. ' +
-				' You can and should help us save the cows and their families. ' +
-				' We are politely asking and strongly demand that you comply with our directive. ' +
-				' Or else.',
+		description: 'Education Haiti mentors are young, successful haitien women and men who strive to help their mentees in the process of applying for education abroad. If you are interested in becoming a mentor, please click on this button',
 		buttonContent: 'Become a mentor'
 	}
 }

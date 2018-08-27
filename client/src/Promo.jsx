@@ -16,17 +16,17 @@ const Promo = (props) => {
 		{
 			label:'Mission', 
 			url:'https://picsum.photos/200/200', 
-			description: 'Hello matey, JP Haiti. Chicken gravy is sixty one eighty.'
+			description: 'To forge the next generation of young leaders in Haiti.'
 		},
 		{
 			label: 'Scope',
 			url: 'https://picsum.photos/200/200',
-			description: 'Hello matey, JP Haiti. Chicken gravy is sixty one eighty.'
+			description: 'We currently accept mentees from haitian secondary schools located for the most part in the Port-au-Prince area.'
 		},
 		{
 			label: 'Programs',
 			url: 'https://picsum.photos/200/200',
-			description: 'Hello matey, JP Haiti. Chicken gravy is sixty one eighty.'
+			description: 'Our various programs help students expand their horizons and prepare for the different college application processes.'
 		} 
 	];
 
@@ -38,6 +38,7 @@ const Promo = (props) => {
 		<div className="promo-container">
 			{rows}
 		</div>
+
 	)
 }
 

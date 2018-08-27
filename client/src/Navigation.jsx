@@ -14,9 +14,10 @@ const Navigation = (props) => {
 
 	return (
 		<div className="header row">
-			<div className="logo">EDUMACATION JP</div>
+			<div className="logo">Education Haiti</div>
 			<div className="navigation">
 				{rows}
+				<button className="apply-b button">APPLY </button>
 				<button className="login button">LOG IN</button>
 			</div>
 		</div>

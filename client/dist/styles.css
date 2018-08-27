@@ -43,12 +43,29 @@ button:hover {
 	background-color: #ffdfe7;
 }
 
-.login:hover {
+.apply-b {
 	border: 1px solid #a33030;
 	border-radius: 5px;
 	background-color: #a33030;
 	color: white;
 	opacity: 0.9;
+}
+
+.apply-b:hover {
+	color: #a33030;
+	background-color: #ffdfe7;
+}
+
+.login {
+	border: 1px solid #234060;
+	border-radius: 5px;
+	background-color: #234060;
+	color: white;
+	opacity: 0.9;
+}
+.login:hover {
+	color: #234060;
+	background-color: #d9edfc;
 }
 
 .column {
@@ -88,9 +105,9 @@ button:hover {
 
 .carousel {
 	margin: 70px 0px 20px 0px;
-	height: 300px;
+	height: 500px;
 	width: 100%;
-	background-image: url('https://picsum.photos/1300/300');
+	background-image: url('https://s3.amazonaws.com/educationhaiti/success.png');
 }
 
 .promo-container {
@@ -132,6 +149,19 @@ button:hover {
 .mentors {
 	background-color: #a33030;
 	color: white;
+}
+
+.become-mentor-button {
+	border: 1px solid #a33030;
+	border-radius: 5px;
+	background-color: #a33030;
+	color: white;
+	opacity: 0.9;
+}
+
+.become-mentor-button:hover {
+	color: #a33030;
+	background-color: #ffdfe7;
 }
 
 .about {
@@ -203,3 +233,102 @@ button:hover {
 .heading {
 	font-weight: bold;
 }
+
+.successful-container {
+	width: 100 vw;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.succ-title {
+	color:  #a33030;
+	font-weight: bold;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.succ-title-description {
+	width: 900px;
+	color: #000000;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.succ-mentee-container {
+	width: 900px;
+	display: flex;
+}
+
+.succ-mentee-photo {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+
+
+.succ-mentee-text-container {
+	display:flex;
+	flex-direction: column;
+	margin-top: 15px;
+}
+
+.succ-mentee-name {
+	font-weight: bold;
+	font-size: 20px;
+	color: #000000;
+	margin-bottom: 3px;
+}
+
+.succ-mentee-bio {
+	font-size: 17px;
+	color: #67777f;
+}
+
+.succ-bottom-section-container {
+	display: flex;
+	width: 100vw;
+	height: 300px;
+	flex-direction: column;
+	align-items: center;
+	background-color: #a33030;
+
+}
+
+.succ-bottom-section-text {
+	font-size: 17px;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 70px;
+}
+
+.succ-bottom-section-button {
+	border: 2px solid #ffffff;
+	padding: 10px;
+	margin: 5px;
+	margin-top:2px;
+	min-width: 70px;
+	border-radius: 5px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 18pt;
+
+}
+
+.succ-bottom-section-button:hover {
+	border: 2px solid #a33030;
+	color: #a33030;
+	background-color: #ffdfe7;
+}
+
+
+
+
+
+
+
+
