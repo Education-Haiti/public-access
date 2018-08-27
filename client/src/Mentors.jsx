@@ -14,10 +14,18 @@ class Mentors extends React.Component {
 	}
 
 	componentDidMount() {
+		this.getMentors();
 
 	}
 
 	getMentors() {
+		axios.get('/visitors/mentors')
+			.then((response) => {
+				this.setState({ mentors: response.data });
+			})
+			.catch((error) => {
+				console.log('Axios error in getting mentors');
+			})
 
 	}
 
