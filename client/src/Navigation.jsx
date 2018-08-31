@@ -19,7 +19,9 @@ const Navigation = (props) => {
 			<div className="navigation">
 				{rows}
 				<button className="apply-b button" onClick={() => {handleNavButtonClicks(1)}}> APPLY </button>
-				<button className="login button"> LOG IN </button>
+				<button className="login button" onClick={() => window.open('https://slack.com/oauth/authorize?scope=identity.basic,identity.email,identity.team,identity.avatar&client_id=18715587520.415941101539')}> 
+				SIGN IN </button>
+				{/*<a className="login button" href="https://slack.com/oauth/authorize?scope=identity.basic,identity.email,identity.team,identity.avatar&client_id=18715587520.415941101539"><img alt="Sign in with Slack" height="40" width="172" src="https://platform.slack-edge.com/img/sign_in_with_slack.png" srcset="https://platform.slack-edge.com/img/sign_in_with_slack.png 1x, https://platform.slack-edge.com/img/sign_in_with_slack@2x.png 2x" /></a>*/}
 			</div>
 		</div>
 	)

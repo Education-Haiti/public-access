@@ -23,7 +23,7 @@ class SuccessStories extends React.Component {
 				
 			})
 			.catch((error) => {
-				console.log('Axios error in getting successful mentees');
+				console.log('Axios error in getting successful mentees : ', error);
 			})
 
 	}

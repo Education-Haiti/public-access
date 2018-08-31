@@ -25,4 +25,4 @@ const panels = {
 	}
 }
 
-ReactDOM.render(<Visitor links={links} panels={panels}/>, document.getElementById('app'));
+ ReactDOM.render(<Visitor links={links} panels={panels}/>, document.getElementById('visitors'));

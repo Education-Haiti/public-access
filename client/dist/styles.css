@@ -64,6 +64,7 @@ button:hover {
 	color: white;
 	opacity: 0.9;
 }
+
 .login:hover {
 	color: #234060;
 	background-color: #d9edfc;
@@ -87,10 +88,10 @@ button:hover {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-  box-shadow: 3px 5px 10px 0px #67777f;
+    box-shadow: 3px 5px 10px 0px #67777f;
 	position: fixed;
 	background-color: white;
-	opacity: 0.8;
+	opacity: 0.7;
 	z-index: 10;
 }
 

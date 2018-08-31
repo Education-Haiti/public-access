@@ -33,7 +33,9 @@ class Visitor extends React.Component {
 		if (identifier === 1) {
 			this.setState({currentView: 'Apply Mentee'});
 		} else if (identifier === 2) {
-			this.setState({currentView: 'Apply Mentor'})
+			this.setState({currentView: 'Apply Mentor'});
+		} else if (identifier === 3) {
+			this.setState({currentView: 'Success Stories'}); // needed for clicks on success stories button (not in nav bar)
 		}
 		
 	}
