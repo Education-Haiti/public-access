@@ -28,6 +28,11 @@ button:hover {
 	color: #a33030;
 }
 
+.nav-logo {
+	width: auto;
+	height: 75px;
+}
+
 .apply {
 	width: 200px;
 	height: 60px;

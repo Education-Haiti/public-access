@@ -17,7 +17,6 @@ class Visitor extends React.Component {
 	}
 
 	handleNavChange (label) {
-		console.log(label);
 		if (label === 'Home') {
 			this.setState({currentView: 'Home'})
 		} else if (label === 'Success Stories') {

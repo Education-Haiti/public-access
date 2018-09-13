@@ -25,12 +25,12 @@ const Footer = (props) => {
 						
 				</div>
 			</div>
-			<div className="column links" >
+			{/* <div className="column links" >
 				<div className="heading">
 					PAGES
 				</div>
 				{ $links }
-			</div>
+			</div> */}
 		</div>
 	)
 }
