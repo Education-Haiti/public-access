@@ -6,7 +6,6 @@ const links = [
 	{ label: 'Home', url: 'www.google.com'},
 	{ label: 'Success Stories', url: 'www.google.com'},
 	{ label: 'Mentors', url: 'www.google.com'},
-	{ label: 'Resources', url: 'www.google.com'},
 ]
 
 const panels = {
