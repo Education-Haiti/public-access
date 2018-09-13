@@ -61,7 +61,7 @@ class Visitor extends React.Component {
 			promo = (<Promo/>);
 			apply = (<button className="apply button" onClick={() => this.handleNavButtonClicks(1)}>APPLY NOW</button>);
 			widepanelAbout = (<WidePanel panel={panels.about} onClick={this.handleNavButtonClicks.bind(this)}/>);
-			widepanelMentors = (<WidePanel panel={panels.mentors} />);
+			widepanelMentors = (<WidePanel panel={panels.mentors} onClick={this.handleNavButtonClicks.bind(this)}/>);
 		} else if (this.state.currentView === 'Success Stories') {
 			successStories = (<SuccessStories onClick={this.handleNavButtonClicks.bind(this)}/>)
 		} else if (this.state.currentView === 'Apply Mentee'){

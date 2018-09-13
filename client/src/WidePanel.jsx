@@ -5,7 +5,7 @@ const WidePanel = (props) => (
 		<div className="wide-panel column">
 			<div className="heading">{props.panel.label}</div>
 			<p>{props.panel.description}</p>
-			<button className="become-mentor-button" onClick={ ()=> props.onClick(3) }>{props.panel.buttonContent}</button>
+			<button className="become-mentor-button" onClick={ ()=> props.onClick(props.panel.handleClickType) }>{props.panel.buttonContent}</button>
 		</div>
 	</div>
 )
