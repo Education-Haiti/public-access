@@ -111,10 +111,12 @@ button:hover {
 }
 
 .carousel {
+	overflow:hidden;
 	margin: 70px 0px 20px 0px;
 	height: 350px;
 	width: 100%;
-	background-image: url('https://s3.amazonaws.com/educationhaiti/successful_pic.png');
+	background-image: url('https://s3.amazonaws.com/educationhaiti/success.png');
+	background-position: 0% 71%;
 }
 
 .promo-container {

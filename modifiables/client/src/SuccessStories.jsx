@@ -12,7 +12,7 @@ class SuccessStories extends React.Component {
 		}
 	}
 
-	componentDidMount() {
+	componentWillMount() {
 		this.getSuccessFullMentees();
 	}
 

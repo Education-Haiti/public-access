@@ -1,10 +1,12 @@
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-	hots: 'localhost',
+	host: 'mysqldb', // when not dockerizing, change the hosts name to "localhost"
 	user: 'root',
-	password: '',
-	database: 'visitors'
+	password: 'abc',
+	database: 'visitors',
+	port: '3306',
+	
 });
 
 connection.connect((err) => {

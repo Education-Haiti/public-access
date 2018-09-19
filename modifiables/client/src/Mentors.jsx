@@ -13,7 +13,7 @@ class Mentors extends React.Component {
 		}
 	}
 
-	componentDidMount() {
+	componentWillMount() {
 		this.getMentors();
 	}
 

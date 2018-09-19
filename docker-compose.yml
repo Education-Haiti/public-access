@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  mysqldb:
+    build: modifiables/database/
+    image: mysql/mysql-server/5.7 
+    restart: always
+    environment: 
+     - MYSQL_ROOT_PASSWORD=abc
+     - MYSQL_DATABASE=visitors
+     - MYSQL_USER=root
+    ports:
+      - 3306:3306
+    volumes:
+      - mysqlvolume:/var/lib/mysql
+  visitors:
+    build: modifiables
+    depends_on:
+      - 'mysqldb'
+    restart: on-failure
+    ports:
+      - '80:80'
+volumes:
+  mysqlvolume:
