@@ -1,0 +1,39 @@
+{
+  "name": "educationhaiti",
+  "version": "1.0.0",
+  "description": "public access service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "build": " webpack -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Education-Haiti/visitor.git"
+  },
+  "author": "JP Vertil, Kony Pham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Education-Haiti/visitor/issues"
+  },
+  "homepage": "https://github.com/Education-Haiti/visitor#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "history": "^4.7.2",
+    "mysql": "^2.16.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}
