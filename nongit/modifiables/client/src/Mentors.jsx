@@ -10,6 +10,7 @@ class Mentors extends React.Component {
 		this.state = {
 			mentors: [''],
 			showGoogleForm : false,
+			isDataReady: false,
 		}
 	}
 
@@ -20,7 +21,9 @@ class Mentors extends React.Component {
 	getMentors() {
 		axios.get('/visitors/mentors')
 			.then((response) => {
-				this.setState({ mentors: response.data });
+				this.setState({ 
+					isDataReady: true,
+					mentors: response.data });
 			})
 			.catch((error) => {
 				console.log('Axios error in getting mentors');
@@ -29,23 +32,30 @@ class Mentors extends React.Component {
 	}
 
 	render() {
-		return (
-			<div>
-				<div className="mentors-container">
-					<div className="mentors-title">
-						MENTORS
-					</div>
+		let holder = null; 
+		let mentors = null;
 
-					<div className="mentors-description">
-						Education Haiti helps bright Haitian students make the most of their potential and transforms them into leaders
-					</div>
-
+		if (this.state.isDataReady === false) {
+			holder = 
+				<div className="preload">
+					<div className="preload-horizontal">
+								<img className="preload-logo"  src="https://s3.amazonaws.com/educationhaiti/education_haiti_logo.png"/>
+							</div>
+					
+							<div className="preload-horizontal">
+								<div className="loading">
+									Loading ...
+								</div>
+							</div>
+				</div>
+		} else {
+			mentors = 
 					<div className="mentors-line-container">
 						{
 							this.state.mentors.map((mentor, index) => {
 								return (
 									<div className="mentor-container">
-										<img className="mentor-photo" src={mentor.photo}/>
+										<img className="mentor-photo" src={mentor.photo || 'https://s3.amazonaws.com/educationhaiti/pending.png'}/>
 										<div className="mentor-name"> {mentor.first_name + ' ' + mentor.last_name} </div>
 										<div className="mentor-description"> 
 											<div> {mentor.highschool} </div>
@@ -59,7 +69,20 @@ class Mentors extends React.Component {
 							})
 						}
 
+					</div> 	
+		}
+		return (
+			<div>
+				<div className="mentors-container">
+					<div className="mentors-title">
+						MENTORS
 					</div>
+
+					<div className="mentors-description">
+						Education Haiti helps bright Haitian students make the most of their potential and transforms them into leaders
+					</div>
+					{holder}
+					{mentors}
 
 					<div className="mentors-bottom-section-container">
 						<div className="mentors-bottom-section-text"> 

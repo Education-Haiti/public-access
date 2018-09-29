@@ -28,6 +28,31 @@ button:hover {
 	color: #a33030;
 }
 
+.preload {
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.preload-horizontal {
+	display: flex;
+	justify-content: center;
+}
+
+.preload-logo {
+	width: auto;
+	height: 150px;
+}
+
+.loading {
+	font-size: 15px;
+	color: #234060;
+	margin-bottom: 250px;
+}
+
 .nav-logo {
 	width: auto;
 	height: 75px;
